@@ -1,0 +1,51 @@
+/* Error404.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Background color set to teal */
+}
+  
+.error-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    /* Background color set to silver */
+    background-color: #c0c0c0;
+}
+  
+.error-image {
+    width: 200px; /* Set the width of the image */
+    height: auto;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.error-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #008080; /* Teal color */
+}
+  
+.error-content p {
+    color: #008080; /* Teal color */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+.error-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #c0c0c0; /* Silver color */
+    color: #008080; /* Teal color */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+.error-content a:hover {
+    background-color: #a9a9a9; /* Darker silver color on hover */
+}
