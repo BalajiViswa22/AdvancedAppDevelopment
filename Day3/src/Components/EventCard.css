@@ -1,0 +1,38 @@
+/* EventCard.css */
+
+.event-card {
+  background-color: #008080; /* Teal background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-details {
+  padding: 15px;
+}
+
+.event-title {
+  color: #c0c0c0; /* Silver text color */
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.event-date {
+  color: #c0c0c0; /* Silver text color */
+  font-size: 1rem;
+  margin-top: 10px;
+}

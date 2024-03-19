@@ -1,0 +1,80 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008080; /* Teal background color */
+  padding: 15px 30px; /* Increased padding */
+}
+
+.navbar-logo {
+  font-size: 1.8rem; /* Increased font size */
+  color: #c0c0c0; /* Silver text color */
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #c0c0c0; /* Silver text color */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #c0c0c0; /* Silver text color */
+  margin-right: 25px; /* Increased margin between menu items */
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #cceeff; /* Light blue text color on hover */
+}
+
+.user-profile {
+  position: relative;
+}
+
+.user-toggle {
+  background-color: transparent;
+  border: none;
+  color: #c0c0c0; /* Silver text color */
+  cursor: pointer;
+}
+
+.user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #008080; /* Teal background color */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.user-menu.open {
+  display: block;
+}
+
+.user-menu-item {
+  text-decoration: none;
+  color: #c0c0c0; /* Silver text color */
+  display: block;
+  padding: 12px 15px; /* Increased padding */
+  transition: background-color 0.3s;
+}
+
+.user-menu-item:hover {
+  background-color: #0056b3; /* Darker teal background color on hover */
+}
