@@ -1,0 +1,80 @@
+/* Dashboard.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color remains unchanged */
+    background-image: linear-gradient(45deg, #008080, #c0c0c0); /* Teal and silver gradient */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9); /* Silver background with opacity */
+    color: #008080; /* Teal text color */
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Silver background with opacity on hover */
+}
+
+.main-content {
+    flex: 1;
+    padding-right: 230px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #ffffff; /* White header text color remains unchanged */
+}
+
+.statistics, .upcoming-events, .calendar, .tasks {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Silver background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.statistics h2, .upcoming-events h2, .calendar h2, .tasks h2 {
+    color: #008080; /* Teal header text color */
+    margin-bottom: 10px;
+}
+
+.statistics p, .upcoming-events ul, .tasks ul {
+    margin-bottom: 10px;
+}
+
+.upcoming-events ul, .tasks ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.upcoming-events ul li, .tasks ul li {
+    padding: 5px 0;
+}
+
+.upcoming-events ul li::before, .tasks ul li::before {
+    content: "•";
+    color: #008080; /* Teal bullet point color */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

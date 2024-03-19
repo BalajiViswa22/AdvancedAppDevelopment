@@ -1,0 +1,65 @@
+/* Home.css */
+
+/* Define a primary color */
+:root {
+  --primary-color: #000000; /* Teal */
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+.event-list {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+  padding-right: 155px;
+}
+
+/* Styles for EventCard component */
+.event-card {
+  background-color: #000000; /* Light Gray background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px; /* Adjust padding as needed */
+  width: calc(300px - 20px); /* Adjust width to account for margin */
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.event-card:first-child {
+  margin-left: 0;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-card h3 {
+  color: var(--primary-color); /* Use primary color */
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.event-card p {
+  color: #444; /* Dark Gray text color */
+  font-size: 1rem;
+  margin-top: 10px;
+}
